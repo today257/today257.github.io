@@ -1,0 +1,85 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: green;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.falling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: fall 10s linear infinite;
+}
+
+.falling-text span {
+    display: block;
+    font-size: 2em;
+    opacity: 0.1;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.rabbit-image {
+    width: 150px;
+    /* Размер изображения кролика */
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-info,
+.about {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+h2 {
+    color: #00FF00;
+    /* Зеленый цвет для заголовков */
+}
+
+footer {
+    text-align: center;
+    padding: 180px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
